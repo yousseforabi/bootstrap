@@ -1,17 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact </title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <style>
+        .hero {
+            background-color: #f8f9fa;
+            min-height: 60vh;
+        }
+        .navbar {
+            background-color: #5474FD !important;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">CatLover</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#breeds">Breeds</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#care">Care</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#adoption">Adoption</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    </head>
-    <body>
+    <header class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-4 mb-4">All About Cats</h1>
+            <p class="lead mb-4">Discover the Wonderful World of Felines</p>
+            <form class="d-flex justify-content-center mb-3">
+                <input class="form-control me-2" type="search" placeholder="Search cat breeds..." aria-label="Search" style="max-width: 200px;">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
 
+    <main class="container my-5">
+        <section id="breeds" class="mb-5">
+            <h2 class="text-center mb-4">Popular Cat Breeds</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Siamese</h3>
+                            <p class="card-text">Known for their striking blue eyes and vocal nature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Maine Coon</h3>
+                            <p class="card-text">Large, intelligent, and playful gentle giants.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <section id="care" class="mb-5">
+            <h2 class="text-center mb-4">Cat Care Tips</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Provide a balanced diet</li>
+                <li class="list-group-item">Regular vet check-ups</li>
+                <li class="list-group-item">Daily playtime and exercise</li>
+                <li class="list-group-item">Keep litter box clean</li>
+            </ul>
+        </section>
 
-    </body>
+        <section id="adoption" class="mb-5">
+            <h2 class="text-center mb-4">Adopt a Cat</h2>
+            <p class="text-center">Give a loving home to a cat in need. Visit your local shelter today!</p>
+            <div class="text-center">
+                <button class="btn btn-primary">Find Shelters Near You</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p> 2023 CatLover. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
